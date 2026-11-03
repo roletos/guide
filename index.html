@@ -121,6 +121,13 @@ footer a{text-decoration:none;border-bottom:1px solid var(--line)}
 
 
 @media (max-width:859px){
+  /* телефон: лицо у верха экрана, текст начинается под подбородком. Всё в vw, чтобы не зависеть от высоты экрана */
+  .hero{min-height:0}
+  .photo{top:calc(30px - 24vw);height:auto}
+  .hero::after{background:linear-gradient(180deg,rgba(22,23,26,0) 56vw,rgba(22,23,26,.55) 66vw,rgba(22,23,26,.9) 80vw,#16171A 95vw)}
+  .hero-body{margin-top:0;padding-top:calc(64vw - 54px)}
+  .h1-big{font-size:clamp(64px,19vw,150px)}
+  .h1-rest{font-size:clamp(38px,11.4vw,92px)}
   .second{padding-block:30px 24px}
   .buy{margin-top:26px}
   .layout,.col{gap:20px}
